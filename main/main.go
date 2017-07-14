@@ -11,7 +11,7 @@ func main() {
 	for i := 0; i < 100; i++ {
 		list[i] = i * 2
 	}
-	tmp := NewParallelStream(list).Filter(func(item interface{}) bool {
+	tmp := NewStream(list).Filter(func(item interface{}) bool {
 		if item.(int) < 100 {
 			return false
 		}
