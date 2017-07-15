@@ -1,9 +1,10 @@
 package main
 
 import (
+	"fmt"
+
 	. "github.com/go-func/stream"
 	"github.com/go-func/stream/collectors"
-	"fmt"
 )
 
 func main() {
@@ -47,6 +48,9 @@ func main() {
 		.Collect(&collectors.SummarizingFloat64{Mapper: func(item interface{}) float64 {
 			return float64(item.(int))
 		}})
+		.ForEach(func(item interface{}) {
+			fmt.Println(item)
+		})
 	*/
 	fmt.Println(tmp)
 }
