@@ -1,7 +1,7 @@
 package main
 
 import (
-	. "github.com/go-func/stream"
+	. "github.com/ZaneYork/go-func/stream"
 )
 
 // func NewStopWatch() func() time.Duration {
