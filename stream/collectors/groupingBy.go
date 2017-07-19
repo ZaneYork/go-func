@@ -1,6 +1,6 @@
 package collectors
 
-import . "github.com/go-func/stream"
+import . "github.com/ZaneYork/go-func/stream"
 
 // GroupingBy 按照指定的规则分组
 type GroupingBy struct {

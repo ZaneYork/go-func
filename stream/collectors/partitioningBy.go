@@ -1,6 +1,6 @@
 package collectors
 
-import . "github.com/go-func/stream"
+import . "github.com/ZaneYork/go-func/stream"
 
 // PartitioningBy 按照指定的分区
 type PartitioningBy struct {
